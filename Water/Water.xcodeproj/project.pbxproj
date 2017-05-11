@@ -14,6 +14,8 @@
 		282C38701EC42C230002606A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282C386E1EC42C230002606A /* LaunchScreen.storyboard */; };
 		287AAC7E1EC4317700451D56 /* Drop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 287AAC7C1EC4317700451D56 /* Drop.jpg */; };
 		287AAC7F1EC4317700451D56 /* Glass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 287AAC7D1EC4317700451D56 /* Glass.jpg */; };
+		287AAC811EC4330900451D56 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AAC801EC4330900451D56 /* HomeViewController.swift */; };
+		287AAC831EC4494C00451D56 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 287AAC821EC4494C00451D56 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		282C38711EC42C230002606A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		287AAC7C1EC4317700451D56 /* Drop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Drop.jpg; path = Resources/Drop.jpg; sourceTree = "<group>"; };
 		287AAC7D1EC4317700451D56 /* Glass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Glass.jpg; path = Resources/Glass.jpg; sourceTree = "<group>"; };
+		287AAC801EC4330900451D56 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		287AAC821EC4494C00451D56 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		282C38641EC42C230002606A /* Water */ = {
 			isa = PBXGroup;
 			children = (
+				287AAC801EC4330900451D56 /* HomeViewController.swift */,
+				287AAC821EC4494C00451D56 /* Settings.bundle */,
 				287AAC7C1EC4317700451D56 /* Drop.jpg */,
 				287AAC7D1EC4317700451D56 /* Glass.jpg */,
 				282C38651EC42C230002606A /* AppDelegate.swift */,
@@ -134,6 +140,7 @@
 				282C38701EC42C230002606A /* LaunchScreen.storyboard in Resources */,
 				287AAC7E1EC4317700451D56 /* Drop.jpg in Resources */,
 				282C386D1EC42C230002606A /* Assets.xcassets in Resources */,
+				287AAC831EC4494C00451D56 /* Settings.bundle in Resources */,
 				282C386B1EC42C230002606A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +154,7 @@
 			files = (
 				282C38681EC42C230002606A /* ViewController.swift in Sources */,
 				282C38661EC42C230002606A /* AppDelegate.swift in Sources */,
+				287AAC811EC4330900451D56 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
