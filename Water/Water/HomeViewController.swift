@@ -36,6 +36,8 @@ class HomeViewController: UIViewController {
     }
     
     
+    // UI ACTIONS
+    
     @IBAction func increaseCups(_ sender: Any) {
         if (numCupsLeft < 16) {
             numCupsLeft = numCupsLeft + 1
@@ -50,17 +52,33 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // SETTINGS
     
-    func registerSettingsBundle(){
+    func registerSettingsBundle() {
         let appDefaults = [String:AnyObject]()
         UserDefaults.standard.register(defaults: appDefaults)
     }
     
-    func updateDisplayFromDefaults(){
+    func updateDisplayFromDefaults() {
         //Get the defaults
         let defaults = UserDefaults.standard
-        let amount = defaults.string(forKey: "daily_amount_preference")
-        dailyAmount = Int(amount!)!
+        //let amount = defaults.string(forKey: "daily_amount_preference")
+        //dailyAmount = Int(amount!)!
+        dailyAmount = defaults.integer(forKey: "daily_amount_preference")
+    }
+    
+    // 3D TOUCH
+    
+    func decrease() {
+        if (numCupsLeft > 0) {
+            numCupsLeft = numCupsLeft - 1
+            numCupsLeftLabel.text = String(numCupsLeft)
+        }
+    }
+    
+    func finish() {
+        numCupsLeft = 0
+        numCupsLeftLabel.text = String(numCupsLeft)
     }
     
 

@@ -41,6 +41,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        let root = UIApplication.shared.keyWindow?.rootViewController
+            
+        root?.dismiss(animated: false, completion: {})
+            
+        root?.present(homeVC, animated: false, completion: { () -> Void in
+            if (shortcutItem.type == "me.neilkulkarni.Water.decrease") {
+                homeVC.decrease()
+            } else if (shortcutItem.type == "me.neilkulkarni.Water.finish") {
+                homeVC.finish()
+            }
+            completionHandler(true)
+        })
+    }
 }
 
